@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #352f5b, #565176);
+    font-family: "Poppins", sans-serif;
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 2rem;
+}
+
+header,
+form,
+.what-task {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    background-color: white;
+    border: none;
+}
+
+form button {
+    all: unset;
+    padding: 14px 25px;
+    color: #565176;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #565176;
+    color: white;
+}
+
+.todo {
+    min-height: 8vh;
+    width: 50vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    margin-bottom: 3px;
+    transition: 0.6s;
+    background: rgba(172, 214, 221, 0.25);
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-bottom: 3px solid #fff;
+}
+
+.todo-item {
+    list-style: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0px 1rem;
+}
+
+.todo>div .icon {
+    padding: 20.3px 23px;
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+    font-size: 1.2rem;
+}
+
+.todo>div>.icon-check:hover {
+    background-color: white;
+    color: rgb(73, 204, 73);
+}
+
+.todo>div .icon-trash:hover {
+    background-color: white;
+    color: #ff6f47;
+}
+
+.complete-task {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(10rem) rotateZ(20deg);
+    opacity: 0;
+}
